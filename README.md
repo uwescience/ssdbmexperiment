@@ -8,6 +8,8 @@ These scripts compute query 2 from the paper on a test dataset provided by the a
 
 The motivation is to measure the performance of a straightforward relational implementation.
 
+Requires the file "gene_cassette_dump.COG.PFAM.tbl.gz" (not provided -- contact the authors of the paper)
+
 1) Setup
 -----------------
 
