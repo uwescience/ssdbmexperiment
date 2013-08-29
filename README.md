@@ -10,7 +10,7 @@ The motivation is to measure the performance of a straightforward relational imp
 
 Requires two files that are not provided -- contact the authors to obtain them:
  1. "gene_cassette_dump.COG.PFAM.tbl.gz" (the input data)
- 2. query2.out (the expected answer) 
+ 2. "query2.out" (the expected answer) 
 
 1) Setup
 -----------------
