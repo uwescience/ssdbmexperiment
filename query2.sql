@@ -13,7 +13,8 @@ drop view if exists all_matches;
 
 -- Create a view that will find all cassettes 
 -- that share at least one property with the given cassette id
--- This is not materializing the results; it's just a logical abstraction for clarity
+-- This is not materializing the results; it's just a 
+-- logical abstraction for clarity
 create view all_matches as 
 select g2.cassetteId, g2.property
   from gene_cassette g1, gene_cassette g2
