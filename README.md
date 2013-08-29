@@ -37,4 +37,6 @@ The timing will be reported automatically.
 See verify.sql for details.
 
 The queries should return no results.
-~                                     
+
+
+

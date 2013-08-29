@@ -32,13 +32,13 @@ create view less_than_two as
  select cassetteId
    from all_matches
 group by cassetteId
- having count(*) = 1;
+ having count(distinct property) = 1;
 
 create view two_or_more as
  select cassetteId
    from all_matches
 group by cassetteId
- having count(*) >= 2;
+ having count(distinct property) >= 2;
 
 -- Now find everything in all_matches
 -- that is not in less_than_two
