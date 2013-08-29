@@ -20,14 +20,14 @@ Requires two files that are not provided -- contact the authors to obtain them:
     $ tail +2 gene_cassette_dump.COG.PFAM.tbl > gene_cassette_dump.COG.PFAM.tbl.no_comments
     $ sqlite3 genome.db < setup.sql
 
-See setup.sql for details
+See [setup.sql](setup.sql) for details
 
 2) Run Query 2
 -----------------
 
     $ sqlite3 genome.db < query2.sql
 
-See query2.sql for deails.
+See [query2.sql](query2.sql) for deails.
 
 The timing will be reported automatically.
 
@@ -37,7 +37,7 @@ The timing will be reported automatically.
     $ python reformat_solution.py
     $ sqlite3 genome.db < verify.sql
 
-See verify.sql for details.
+See [verify.sql](verify.sql) for details.
 
 The queries should return no results.
 
