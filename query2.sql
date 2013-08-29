@@ -5,11 +5,11 @@
 .mode tabs
 
 -- reset everything
-drop table q2_solution;
-drop view q2;
-drop view two_or_more;
-drop view less_than_two;
-drop view all_matches;
+drop table if exists q2_solution;
+drop view if exists q2;
+drop view if exists two_or_more;
+drop view if exists less_than_two;
+drop view if exists all_matches;
 
 -- Create a view that will find all cassettes 
 -- that share at least one property with the given cassette id
