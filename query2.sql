@@ -48,5 +48,5 @@ select *
 -- in two_or_more;
 
 -- Now we actually compute the result and put it in a new table for verification.
-create table q2_solution as select * from q2;
+create table q2_solution as select distinct * from q2;
 
