@@ -20,12 +20,20 @@ create table q2_correct(
 
 -- Find everything in db solution that is not in the correct solution
 -- Should return nothing
-select * from q2_solution
+select cassetteId, property, count(*) from q2_solution group by cassetteId, property
 except 
-select * from q2_correct;
+select cassette, prop, count(*) from q2_correct group by cassette, prop;
 
 -- Find everything in correct solution that is not in the db solution
 -- Should return nothing
-select * from q2_correct 
+select cassette, prop, count(*) from q2_correct group by cassette, prop
 except 
+select cassetteId, property, count(*) from q2_solution group by cassetteId, property;
+
+
+-- Dump the results for direct comparison with the file.
+.echo off
+.mode csv
+.separator ' '
+.out query2.sql.out.tuples
 select * from q2_solution;
