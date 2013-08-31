@@ -42,11 +42,11 @@ group by cassetteId
 -- that share at least two properties with the query cassette
 -- No work has been done at this point; it's just a view
 create view q2 as
-select * 
+select distinct * 
   from all_matches
  where cassetteId in two_or_more;
 -- in two_or_more;
 
 -- Now we actually compute the result and put it in a new table for verification.
-create table q2_solution as select distinct * from q2;
+create table q2_solution as select * from q2;
 
